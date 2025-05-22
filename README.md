@@ -1,6 +1,6 @@
-# ajio API Backend with Node.js & MongoDB
+# AJIO E-Commerce backend
 
-A complete implementation of ajio e-commerce app with MongoDB persistence, built with Node.js, Express, and Mongoose.
+A complete implementation of ajio backend app with MongoDB persistence, built with Node.js, Express, and Mongoose.
 
 - Backend URL: https://ajio-server.onrender.com
 - Docs URL: https://ajio-server.onrender.com/api-docs/
