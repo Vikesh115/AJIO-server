@@ -15,25 +15,25 @@ A complete implementation of ajio backend app with MongoDB persistence, built wi
 
 ## API Endpoints
 
-| Endpoint | Method | Description	| Auth Required |
-| /api/auth/register | POST | Register a new user | ❌ |
-| /api/auth/login | POST | Login | existing user | ❌ |
+ - | Endpoint | Method | Description	| Auth Required |
+ - | /api/auth/register | POST | Register a new user | ❌ |
+ - | /api/auth/login | POST | Login | existing user | ❌ |
 
-| Endpoint | Method | Description | Auth Required |
-| /api/products | GET | Get all products | ❌ |
-| /api/products/:id | GET | Get single product by ID | ❌ |
-| /api/products/categories | GET | Get all available categories | ❌ |
-| /api/products/category/:category | GET	Filter products by category | ❌ |
-| /api/products/fetch-products | GET | Fetch & save products from FakeStoreAPI | (admin) |
-| /api/cart | POST | Create new cart (auto-created on register) | ✔️ |
-| /api/cart | GET | Get user's cart with all items | ✔️ |
-| /api/cart/add | POST | Add product to cart | ✔️ |
-| /api/cart/:productId | DELETE | Remove product from cart | ✔️ |
-| /api/cart/:productId | PUT | Update product quantity in cart | ✔️ |
-| /api/wishlist | POST | Create new wishlist (auto-created on register) | ✔️ |
-| /api/wishlist | GET | Get user's wishlist | ✔️ |
-| /api/wishlist/add | POST | Add product to wishlist | ✔️ |
-| /api/wishlist/:productId | DELETE | Remove product from wishlist | ✔️ |
+ - | Endpoint | Method | Description | Auth Required |
+ - | /api/products | GET | Get all products | ❌ |
+ - | /api/products/:id | GET | Get single product by ID | ❌ |
+ - | /api/products/categories | GET | Get all available categories | ❌ |
+ - | /api/products/category/:category | GET	Filter products by category | ❌ |
+ - | /api/products/fetch-products | GET | Fetch & save products from FakeStoreAPI | (admin) |
+ - | /api/cart | POST | Create new cart (auto-created on register) | ✔️ |
+ - | /api/cart | GET | Get user's cart with all items | ✔️ |
+ - | /api/cart/add | POST | Add product to cart | ✔️ |
+ - | /api/cart/:productId | DELETE | Remove product from cart | ✔️ |
+ - | /api/cart/:productId | PUT | Update product quantity in cart | ✔️ |
+ - | /api/wishlist | POST | Create new wishlist (auto-created on register) | ✔️ |
+ - | /api/wishlist | GET | Get user's wishlist | ✔️ |
+ - | /api/wishlist/add | POST | Add product to wishlist | ✔️ |
+ - | /api/wishlist/:productId | DELETE | Remove product from wishlist | ✔️ |
 
 ## Prerequisites
 
