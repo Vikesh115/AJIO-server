@@ -15,8 +15,12 @@ const register = async (req, res) => {
         await user.save();
 
         // Create empty cart and wishlist for new user
-        await axios.post(`http://localhost:${process.env.PORT}/api/cart`, { userId: user._id });
-        await axios.post(`http://localhost:${process.env.PORT}/api/wishlist`, { userId: user._id });
+        const baseUrl = process.env.NODE_ENV === 'production' 
+            ? 'https://ajio-server.onrender.com/api' 
+            : `http://localhost:${process.env.PORT}/api`;
+        
+        await axios.post(`${baseUrl}/cart`, { userId: user._id });
+        await axios.post(`${baseUrl}/wishlist`, { userId: user._id });
 
         const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 

@@ -9,6 +9,7 @@ const fetchAndSaveProducts = async () => {
         await Product.deleteMany({});
         await Product.insertMany(products);
 
+        res.json(products);
         console.log('Products fetched and saved successfully');
     } catch (error) {
         console.error('Error fetching products:', error.message);

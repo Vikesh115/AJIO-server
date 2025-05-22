@@ -2,6 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const swaggerSetup = require('./swagger');
 
 dotenv.config();
 
@@ -24,6 +25,8 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
 app.use('/api/cart', require('./routes/cartRoutes'));
 app.use('/api/wishlist', require('./routes/wishlistRoutes'));
+
+swaggerSetup(app);
 
 const PORT = process.env.PORT || 5000;
 
