@@ -48,7 +48,7 @@ A complete implementation of ajio backend app with MongoDB persistence, built wi
  - npm install (install dependencies)
  - npm run dev (development mode with hot reload)
  - npm start (production mode)
- - npm test (test mode)
+ - npx jest (test mode)
 
 ## Project structure
 
